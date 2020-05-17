@@ -22,7 +22,14 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.masouddev.myapp",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "description": "",
+    "android": {
+      "package": "com.masouddev.myapp",
+      "versionCode": 1
     }
   }
 }

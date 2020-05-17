@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Text, Grid, Thumbnail, View, Icon } from 'native-base';
-import { FlatList, StyleSheet, Animated, Easing, TouchableWithoutFeedback } from 'react-native';
+import { Text, Thumbnail, View } from 'native-base';
+import { FlatList, StyleSheet } from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -50,6 +50,7 @@ class FavoritesTab extends Component {
                     data={this.props.favorites}
                     renderItem={this.renderRow}
                     keyExtractor={(i) => i.id}
+                    numColumns={2}
                     ListEmptyComponent={this.renderEmptyContainer()}
 
                 />

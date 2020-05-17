@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Text, Grid, Thumbnail, View, Icon } from 'native-base';
-import { FlatList, StyleSheet, Animated, Easing, TouchableWithoutFeedback, ActivityIndicator } from 'react-native';
+import { View } from 'native-base';
+import { FlatList, StyleSheet } from 'react-native';
 import { accessKey } from '../../../config'
 import ImageItem from './image';
 
@@ -42,8 +42,6 @@ class ExploreTab extends Component {
 
 
         const response = await fetch(`https://api.unsplash.com/search/photos?client_id=${accessKey}&page=${page}&query=${query ? query : 'wallpaper'}`);
-
-
 
         const data = await response.json();
         const newImages = data.results.map(i => ({

@@ -25,7 +25,6 @@ class ExploreTab extends Component {
     }
 
     componentDidMount() {
-        console.log('dddd')
         this.loadData(1);
     }
     componentDidUpdate(prevProps, prevState) {
